@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.info_container h1{
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    color: white;
+    font-size: 3vw;
+    text-align: center;
+    border-bottom: 1px dashed rgb(207, 207, 10);
+}
+.players{
+    display: flex;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.players p{
+    text-align: center;
+    width: 25vw;
+    font-size: 1.6vw;
+    margin: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .info_container h1{
+        font-size: 10vw;
+    }
+    .players p{
+        width: 35vw;
+        font-size: 5vw;
+    }
+}

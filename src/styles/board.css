@@ -1,0 +1,138 @@
+.board-container{
+    width: 25vw;
+    height: 25vw;
+    margin-top: 4vw;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.row{
+    display: flex;
+    height: 33.33%;
+}
+#b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8,#b9{
+    width: 33.33%;
+    text-align: center;
+    color: white;
+    font-size: 6vw;
+}
+#b1{
+    border-right: 2px solid rgb(207, 207, 10);
+    border-bottom: 2px solid rgb(207, 207, 10);
+}
+#b2{
+    border-bottom: 2px solid rgb(207, 207, 10);
+}
+#b3{
+    border-left: 2px solid rgb(207, 207, 10);
+    border-bottom: 2px solid rgb(207, 207, 10);
+}
+#b4{
+    border-right: 2px solid rgb(207, 207, 10);
+    border-bottom: 2px solid rgb(207, 207, 10);
+}
+#b5{
+    border-bottom: 2px solid rgb(207, 207, 10);
+}
+#b6{
+    border-left: 2px solid rgb(207, 207, 10);
+    border-bottom: 2px solid rgb(207, 207, 10);
+}
+#b7{
+    border-right: 2px solid rgb(207, 207, 10);
+}
+#b9{
+    border-left: 2px solid rgb(207, 207, 10);
+}
+.reset{
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    margin-top: 3vw;
+}
+.trueresult{
+    width: 20vw;
+    height: 20vw;
+    position: fixed;
+    top: 32vh;
+    left: 40vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 10px 10px 100px;
+}
+.falseresult{
+    width: 20vw;
+    height: 20vw;
+    position: fixed;
+    top: 32vh;
+    left: 40vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 10px 10px 100px;
+    display: none;
+}
+#result{
+    font-size: 4vw;
+    color: rgb(77, 77, 77);
+    text-align: center;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.062);
+}
+#presult{
+    font-size: 1vw;
+    text-align: center;
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.062);
+}
+.play-again{
+    text-align: center;
+    margin: 20px;
+    background-color: rgb(0, 122, 122);
+    color: white;
+    border: none;
+    font-size: 2vw;
+    padding: 10px;
+    border-radius: 15px;
+    margin-left: 5vw;
+    cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+    .board-container{
+        width: 75vw;
+        height: 75vw;
+        margin-top: 20vw; 
+    }
+    #b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8,#b9{
+        width: 33.33%;
+        text-align: center;
+        color: white;
+        font-size: 17vw;
+        padding-top: 10px;
+    }
+    .trueresult{
+        width: 80vw;
+        height: 80vw;
+        top: 25vh;
+        left: 10vw;
+    }
+    .falseresult{width: 80vw;
+        height: 80vw;
+        top: 25vh;
+        left: 10vw;
+    }
+    #result{
+        font-size: 10vw;
+    }
+    #presult{
+        font-size: 6vw;
+    }
+    .play-again{
+        margin: 20px;
+        border: none;
+        font-size: 8vw;
+        margin-left: 19vw;
+    }
+    .reset{
+        font-size: 10vw;
+    }
+}
